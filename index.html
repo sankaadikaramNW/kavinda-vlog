@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with Hasitha — Premium Travel Photography Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Streamlined Header Navigation -->
+    <header class="glass-header">
+        <div class="logo">
+            Travel with<span>Hasitha.</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#gallery" class="active">Gallery</a>
+            <a href="#about">The Artist</a>
+            <a href="#contact">Inquire</a>
+        </nav>
+        <div class="header-actions">
+            <button class="btn-nav" id="add-capture-trigger" title="Upload New Capture">
+                <span class="material-icons-outlined" style="font-size:1.15rem; vertical-align:middle; margin-right:4px;">add_photo_alternate</span> Add Capture
+            </button>
+        </div>
+    </header>
+
+    <!-- Full-Screen Cinematic Slideshow Hero -->
+    <section class="hero-slideshow-section" id="hero">
+        <div class="slideshow-container" id="hero-slideshow">
+            <!-- Dynamic fading slideshow images inject here -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-text-deck">
+            <span class="hero-badge animate-item">CINEMATIC TRAVEL PORTFOLIO</span>
+            <h1 class="animate-item">Capturing Light Across<br><em>Borders & Latitudes</em></h1>
+            <p class="animate-item">An immersive visual showcase of high-end travel and landscape photography captured by Hasitha Dilshan.</p>
+            <div class="hero-buttons animate-item">
+                <a href="#gallery" class="btn">Explore Gallery</a>
+            </div>
+        </div>
+        <div class="scroll-down-btn">
+            <span class="material-icons-outlined">expand_more</span>
+        </div>
+    </section>
+
+    <!-- Multi-Gallery Collections Hub -->
+    <section class="gallery-hubs" id="collections">
+        <div class="section-header">
+            <span class="gold-badge">Expeditions</span>
+            <h2>Photographic Collections</h2>
+            <p>Select a travel gallery below to browse its dedicated masonry archive.</p>
+        </div>
+        <div class="hubs-grid" id="hubs-tile-grid">
+            <!-- Dynamic glassmorphic gallery tiles inject here -->
+        </div>
+    </section>
+
+    <!-- Interactive Photography Showcase Section -->
+    <section class="gallery-wrapper" id="gallery">
+        <div class="section-header">
+            <span class="gold-badge">Photography Vault</span>
+            <h2 id="active-gallery-heading">Athugala Wehera 2025</h2>
+            <p>High-resolution captures complete with camera models, focal lengths, and locations.</p>
+        </div>
+
+        <!-- Clean category tabs -->
+        <div class="gallery-control-bar">
+            <div class="category-tabs" id="category-tabs">
+                <button class="tab-btn active" data-category="all">All Captures</button>
+                <button class="tab-btn" data-category="Culture">Sacred Summit</button>
+                <button class="tab-btn" data-category="Wilderness">Rocky Wilderness</button>
+                <button class="tab-btn" data-category="Adventure">Adventure Pathways</button>
+            </div>
+            <div class="search-wrap">
+                <span class="material-icons-outlined search-icon">search</span>
+                <input type="text" id="gallery-search" placeholder="Search locations, camera gear, tags...">
+            </div>
+        </div>
+
+        <!-- Staggered Masonry Gallery Wall -->
+        <div class="masonry-gallery" id="gallery-masonry-wall">
+            <!-- Dynamic photo cards inject here -->
+        </div>
+    </section>
+
+    <!-- High-Fashion Minimalist Profile Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=800" alt="Hasitha Dilshan Photo Profile">
+                <div class="about-image-border"></div>
+            </div>
+            <div class="about-content">
+                <span class="gold-badge">The Photographer</span>
+                <h2>Behind the Lens</h2>
+                <p>Hello, I'm Hasitha Dilshan. I travel the world seeking out rare intersections of cultural heritage, wild landscapes, and cinematic lighting conditions.</p>
+                <p>Equipped with ultra-high resolution mirrorless gear, my visual style focuses on capturing depth, rich color harmonies, and storytelling textures. This digital showcase serves as my personal media library—a curated window into wild horizons.</p>
+                <div class="photographer-specs">
+                    <div class="spec-card">
+                        <span class="spec-label">Primary Body</span>
+                        <span class="spec-val">Sony α7R V</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Favorite Glass</span>
+                        <span class="spec-val">FE 24-70mm f/2.8 GM II</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry / Booking Form -->
+    <section class="contact-section" id="contact">
+        <div class="contact-wrapper glass-card">
+            <div class="contact-header">
+                <h2>Acquire Premium Visual Prints</h2>
+                <p>Interested in utilizing a landscape capture for editorial features, digital publications, or luxury gallery prints? Reach out directly.</p>
+            </div>
+            <form id="gallery-inquiry-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" id="user-name" required placeholder="e.g. Sanka Adikaram">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" id="user-email" required placeholder="e.g. sanka@domain.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Capture Name or Project Request</label>
+                    <input type="text" id="user-capture" placeholder="e.g. Sunset in Kyoto Temple">
+                </div>
+                <div class="form-group">
+                    <label>Inquiry Message</label>
+                    <textarea id="user-message" rows="4" required placeholder="Outline your visual publishing goals..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="align-self: center; min-width: 220px;">Transmit Inquiry</button>
+            </form>
+            <div id="inquiry-success" class="alert-success-banner" style="display:none;">
+                📬 Inquiry compiled and delivered directly to Hasitha's inbox!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-layout">
+            <h2>Travel with<span>Hasitha.</span></h2>
+            <p>An elegant showcase celebrating high-fashion landscape and travel photography.</p>
+            <div class="social-icons">
+                <a href="#"><span class="material-icons-outlined">photo_camera</span></a>
+                <a href="#"><span class="material-icons-outlined">mail</span></a>
+            </div>
+            <p class="copyright">&copy; 2026 Hasitha Dilshan. Handcrafted Visual Canvas.</p>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+     * MODAL: Full Screen EXIF Metadata Lightbox
+     * ====================================================================== -->
+    <div class="lightbox-overlay" id="gallery-lightbox">
+        <button class="lightbox-close" id="lightbox-close-btn">&times;</button>
+        
+        <div class="lightbox-content-deck">
+            <div class="lightbox-media-canvas">
+                <img id="lightbox-img" src="" alt="High Res Canvas">
+            </div>
+            
+            <div class="lightbox-sidebar glass-card">
+                <div class="lightbox-header-row">
+                    <span class="gold-badge" id="lightbox-category">Kyoto</span>
+                    <h3 id="lightbox-title">Golden Hour Over Kinkaku-Ji</h3>
+                    <p id="lightbox-location"><span class="material-icons-outlined" style="font-size:0.85rem; vertical-align:middle;">location_on</span> Kyoto, Japan</p>
+                </div>
+                
+                <!-- Lens / Exposure details card -->
+                <div class="exif-data-grid">
+                    <h4><span class="material-icons-outlined" style="font-size:0.95rem; vertical-align:middle; margin-right:4px;">camera_alt</span> Camera Settings (EXIF)</h4>
+                    <div class="exif-row">
+                        <div class="exif-cell">
+                            <span class="exif-label">Body</span>
+                            <span class="exif-val" id="exif-body">Sony α7R V</span>
+                        </div>
+                        <div class="exif-cell">
+                            <span class="exif-label">Lens</span>
+                            <span class="exif-val" id="exif-lens">24-70mm f/2.8 GM</span>
+                        </div>
+                    </div>
+                    <div class="exif-row">
+                        <div class="exif-cell">
+                            <span class="exif-label">Aperture</span>
+                            <span class="exif-val" id="exif-aperture">f/4.0</span>
+                        </div>
+                        <div class="exif-cell">
+                            <span class="exif-label">Shutter Speed</span>
+                            <span class="exif-val" id="exif-shutter">1/160s</span>
+                        </div>
+                    </div>
+                    <div class="exif-row">
+                        <div class="exif-cell">
+                            <span class="exif-label">ISO Speed</span>
+                            <span class="exif-val" id="exif-iso">100</span>
+                        </div>
+                        <div class="exif-cell">
+                            <span class="exif-label">Focal Length</span>
+                            <span class="exif-val" id="exif-focal">35mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lightbox-actions-row">
+                    <button class="btn-like" id="lightbox-like-btn">
+                        <span class="material-icons-outlined">favorite_border</span>
+                        <span>Like Capture (<span id="lightbox-like-count">42</span>)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+     * MODAL: Clean Minimal Owner Uploader Portal
+     * ====================================================================== -->
+    <div class="admin-modal-overlay" id="admin-uploader-modal">
+        <div class="admin-modal-card glass-card">
+            <button class="admin-modal-close" id="admin-modal-close-btn">&times;</button>
+            <div class="admin-modal-header">
+                <h2>Add New Photographic Capture</h2>
+                <p>Register a fresh photograph into your premium public showcase.</p>
+            </div>
+            
+            <form id="admin-upload-form" class="uploader-form-grid">
+                
+                <!-- Left Column: Drag & Drop Mock -->
+                <div class="uploader-drop-section">
+                    <div class="drag-drop-box" id="drag-drop-zone">
+                        <span class="material-icons-outlined" style="font-size:3.5rem; color:var(--gold); margin-bottom:0.5rem;">cloud_upload</span>
+                        <h4>Drop Image File Here</h4>
+                        <p style="font-size:0.75rem; color:var(--text-muted);">Simulated dynamic Base64 encoder</p>
+                        <input type="file" id="file-uploader-input" accept="image/*" style="display:none;">
+                    </div>
+                    <div class="upload-progress-container" id="upload-progress-wrap" style="display:none;">
+                        <div class="upload-progress-fill" id="upload-progress-bar"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Metadata inputs -->
+                <div class="uploader-inputs-section">
+                    <div class="form-group">
+                        <label>Capture Title</label>
+                        <input type="text" id="up-title" required placeholder="e.g. Sunrise over Golden Temple">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City Location</label>
+                            <input type="text" id="up-city" required placeholder="e.g. Kyoto">
+                        </div>
+                        <div class="form-group">
+                            <label>Country Region</label>
+                            <input type="text" id="up-country" required placeholder="e.g. Japan">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Select Gallery Collection</label>
+                            <select id="up-gallery-id" required>
+                                <!-- Dynamically populated -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Photo Sub-Category</label>
+                            <select id="up-category" required>
+                                <option value="Culture">Sacred Summit</option>
+                                <option value="Wilderness">Rocky Wilderness</option>
+                                <option value="Adventure">Adventure Pathways</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Image Direct URL (Alternative / Local Path)</label>
+                        <input type="text" id="up-url" placeholder="e.g. Athugala Wehera Traveling 2025/FormatFactoryIMG...">
+                    </div>
+                    
+                    <h4 class="form-subheading">EXIF Camera Configuration</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Camera Body</label>
+                            <input type="text" id="up-body" value="Sony α7R V">
+                        </div>
+                        <div class="form-group">
+                            <label>Lens Attached</label>
+                            <input type="text" id="up-lens" value="FE 24-70mm f/2.8 GM II">
+                        </div>
+                    </div>
+                    <div class="form-row" style="grid-template-columns: repeat(4, 1fr);">
+                        <div class="form-group">
+                            <label>Aperture</label>
+                            <input type="text" id="up-aperture" value="f/4.0">
+                        </div>
+                        <div class="form-group">
+                            <label>Shutter Speed</label>
+                            <input type="text" id="up-shutter" value="1/250s">
+                        </div>
+                        <div class="form-group">
+                            <label>ISO Rating</label>
+                            <input type="text" id="up-iso" value="100">
+                        </div>
+                        <div class="form-group">
+                            <label>Focal Length</label>
+                            <input type="text" id="up-focal" value="35mm">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width:100%; margin-top:1rem;">Publish to Gallery Wall</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+     * MODAL: Clean Minimal Owner Gallery Creator Portal
+     * ====================================================================== -->
+    <div class="admin-modal-overlay" id="admin-gallery-modal">
+        <div class="admin-modal-card glass-card" style="max-width:550px; height:auto; max-height:90%;">
+            <button class="admin-modal-close" id="admin-gallery-close-btn">&times;</button>
+            <div class="admin-modal-header">
+                <h2>Create New Photo Gallery</h2>
+                <p>Establish a fresh photographic collection with a visual cover card.</p>
+            </div>
+            
+            <form id="admin-gallery-form" style="display:flex; flex-direction:column; gap:1.2rem;">
+                <div class="form-group">
+                    <label>Gallery Title</label>
+                    <input type="text" id="gal-title" required placeholder="e.g. Ella Adventure 2026">
+                </div>
+                <div class="form-group">
+                    <label>Description Summary</label>
+                    <textarea id="gal-desc" rows="3" required placeholder="Outline the theme or highlights of this travel shoot..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Cover Image File (Or enter path below)</label>
+                    <input type="file" id="gal-cover-file" accept="image/*" style="margin-bottom: 0.5rem; display: block; width: 100%; color: var(--text-muted); font-size: 0.85rem;">
+                    <input type="text" id="gal-cover" required placeholder="e.g. assets/cover.jpg">
+                </div>
+                
+                <button type="submit" class="btn" style="width:100%; margin-top:0.8rem;">Establish Collection</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+</body>
+</html>
