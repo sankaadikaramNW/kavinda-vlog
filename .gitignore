@@ -1,0 +1,23 @@
+# Ignore local configuration and temporary workspace folders
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Ignore all user-uploaded physical images
+assets/
+
+# Ignore all raw/test travel photography catalogs
+Athugala Wehera Traveling 2025/
+
+# Ignore all common image binary file extensions globally
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+*.bmp
+*.tiff
